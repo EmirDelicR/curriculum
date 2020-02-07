@@ -98,17 +98,22 @@ export default {
         document.documentElement.clientWidth ||
         document.body.clientWidth;
 
-      if (1400 < width && width < 1900) {
-        return 1.3;
+      const height =
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+      if (1300 < width && width < 1900 && height > 750) {
+        return 1.4;
       }
-      if (width > 1900) {
+      if (width > 1900 && height > 750) {
         return 1.5;
       }
-      if (width > 2400) {
+      if (width > 2400 && height > 750) {
         return 2;
       }
 
-      return 1;
+      return 1.3;
     }
   },
   beforeDestroy() {

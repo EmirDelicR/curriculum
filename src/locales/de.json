@@ -14,7 +14,7 @@
     "database": "Datenbank",
     "utils": "Nützlichkeit",
     "description": "Beschreibung",
-    "visual": "Graphik"
+    "visual": "Grapfik"
   },
   "skill-list": {
     "js": "Java Script",
@@ -24,7 +24,7 @@
     "programs": "Sprache",
     "frameworks": "Framework",
     "db": "Datenbank",
-    "util": "Nützlichkeit"
+    "util": "Utility"
   },
   "graph-labels": {
     "speed": "Geschwindigkeit",
