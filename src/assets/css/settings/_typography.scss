@@ -1,0 +1,57 @@
+/* Source Sans Pro */
+
+@include font-face('#{$source-sans-pro}', '#{$path-sans}-Regular');
+@include font-face('#{$source-sans-pro}', '#{$path-sans}-SemiBold', $fw-bold);
+
+/* Source Courgette */
+@include font-face('#{$source-courgette}', '#{$path-cour}-Regular');
+
+body {
+  font-family: $main-font;
+
+  .page-name {
+    font-family: $source-courgette, cursive;
+  }
+
+  .pages-nav__item--small {
+    font-family: $source-courgette, cursive;
+  }
+
+  .language-cour {
+    font-family: $source-courgette, cursive;
+  }
+}
+h1,
+h2 {
+  font-family: '#{$main-font}-Medium';
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: '#{$main-font}-Bold';
+}
+
+h1 {
+  @include set-fonts($fs-36, $ls-1, $lh-42);
+}
+
+h2 {
+  @include set-fonts($fs-28, $ls-2, $lh-33);
+}
+
+h3 {
+  @include set-fonts($fs-20, $ls-3, $lh-26);
+}
+
+h4 {
+  @include set-fonts($fs-18, $ls-3, $lh-25);
+}
+
+h5 {
+  @include set-fonts($fs-16, $ls-3, $lh-24);
+}
+
+h6 {
+  @include set-fonts($fs-14, $ls-3, $lh-20);
+}
