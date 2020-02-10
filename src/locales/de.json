@@ -12,7 +12,7 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Datenbank",
-    "utils": "Nützlichkeit",
+    "utils": "Utility",
     "description": "Beschreibung",
     "visual": "Grapfik"
   },

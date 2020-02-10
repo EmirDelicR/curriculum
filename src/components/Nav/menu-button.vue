@@ -1,5 +1,5 @@
 <template>
   <button class="menu-button">
-    <span></span>
+    <span>Menu</span>
   </button>
 </template>
