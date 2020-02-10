@@ -7,11 +7,7 @@ module.exports = {
     name: manifestJSON.short_name,
     msTileColor: manifestJSON.background_color,
     appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: 'black',
-    workboxPluginMode: 'InjectManifest',
-    workboxOptions: {
-      swSrc: 'service-worker.js'
-    }
+    appleMobileWebAppStatusBarStyle: 'black'
   },
   pluginOptions: {
     i18n: {
