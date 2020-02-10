@@ -3,6 +3,7 @@
     :class="item.linkClass"
     :href="item.link"
     target="_blank"
+    rel="noreferrer"
     :download="item.download"
   >
     <i :title="item.name.toUpperCase()" :class="item.icon"></i>
@@ -10,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'SocialLink',
+  name: "SocialLink",
   props: {
     item: {
       type: Object,

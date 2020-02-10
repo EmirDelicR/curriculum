@@ -8,7 +8,12 @@
 
     <div class="link-skill-desc" v-if="isValidLink(getInnerData.link)">
       <p>{{ $t('skill-description.link')}}</p>
-      <a target="blank" class="language-cour" :href="getInnerData.link">{{ data.name }}</a>
+      <a
+        target="_blank"
+        class="language-cour"
+        :href="getInnerData.link"
+        rel="noreferrer"
+      >{{ data.name }}</a>
     </div>
   </div>
 </template>

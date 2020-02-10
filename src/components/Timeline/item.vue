@@ -7,7 +7,12 @@
       </div>
       <div class="link-desc">
         <p>{{ item.job }}</p>
-        <a :href="item.link" class="language-cour" target="blank">{{ item.linkDescription }}</a>
+        <a
+          :href="item.link"
+          class="language-cour"
+          target="_blank"
+          rel="noreferrer"
+        >{{ item.linkDescription }}</a>
       </div>
 
       <div class="location">

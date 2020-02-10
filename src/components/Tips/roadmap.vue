@@ -3,7 +3,8 @@
     <div class="language-cour title">
       <a
         href="https://github.com/kamranahmedse/developer-roadmap"
-        target="blank"
+        target="_blank"
+        rel="noreferrer"
       >{{ $t('tips.learn')}}</a>
     </div>
     <organization-chart :datasource="content"></organization-chart>
