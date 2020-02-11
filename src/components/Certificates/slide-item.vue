@@ -3,7 +3,6 @@
     <div class="overlay"></div>
     <div class="content">
       <h2>{{ item.title }}</h2>
-      <!-- <p>{{ item.description }}</p> -->
     </div>
   </div>
 </template>

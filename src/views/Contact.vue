@@ -1,8 +1,6 @@
 <template>
   <div class="contact-wrapper">
     <div class="gmap-area">
-      <!-- https://www.maps.ie/create-google-map/ -->
-
       <div class="gmap">
         <iframe
           frameborder="0"
