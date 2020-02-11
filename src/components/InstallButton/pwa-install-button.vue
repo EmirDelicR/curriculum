@@ -23,7 +23,6 @@ export default {
   methods: {
     installPWA() {
       window.deferredPrompt = {};
-
       window.addEventListener("beforeinstallprompt", e => {
         e.preventDefault();
 
@@ -43,7 +42,7 @@ export default {
         window.matchMedia("(display-mode: standalone)").matches ||
         window.navigator.standalone === true
       ) {
-        this.wrapp.style.display = "none";
+        this.wrapp.classList.toggle("pwa-active", false);
       }
 
       window.addEventListener("appinstalled", () => {
