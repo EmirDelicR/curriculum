@@ -1,0 +1,24 @@
+.pwa-install-wrapper {
+  position: absolute;
+  z-index: 10001;
+  top: 92vh;
+  right: 1vh;
+  border: 2px solid $menu-button;
+  border-radius: 4px;
+  display: none;
+
+  &.pwa-active {
+    display: block;
+  }
+
+  button {
+    height: $ls-box-size;
+    background: $body-background;
+    color: $nav-link;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
