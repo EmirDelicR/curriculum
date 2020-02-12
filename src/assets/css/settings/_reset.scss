@@ -103,6 +103,11 @@ section {
 body {
   line-height: 1;
 }
+
+ul {
+  list-style: none;
+}
+
 *::selection {
   background-color: transparent;
 }
