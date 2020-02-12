@@ -12,15 +12,9 @@ const capitalize = value => {
   return value.charAt(0).toUpperCase() + value.slice(1);
 };
 
-const toggleSkillView = () => {
-  const skillOptionWrapper = document.getElementsByClassName('skill-option')[0];
-
-  if (skillOptionWrapper.classList.contains('transform-active')) {
-    skillOptionWrapper.classList.remove('transform-active');
-    return;
-  } else {
-    skillOptionWrapper.classList.add('transform-active');
-  }
+const toggleView = name => {
+  const wrapper = document.getElementsByClassName(name)[0];
+  wrapper.classList.toggle('transform-active');
 };
 
-export { lazyLoadPage, capitalize, lazyLoadImage, toggleSkillView };
+export { lazyLoadPage, capitalize, lazyLoadImage, toggleView };

@@ -18,7 +18,7 @@
     </div>
     <div class="page" id="portfolio">
       <span class="page-name">{{ $t(`nav-bar.portfolio`) }}</span>
-      <Portofolio v-if="isCurrentPage('portfolio')" />
+      <Portfolio v-if="isCurrentPage('portfolio')" />
     </div>
     <div class="page" id="tips">
       <span class="page-name">{{ $t(`nav-bar.tips`) }}</span>
@@ -41,7 +41,7 @@ import {
 import { lazyLoadPage } from "@/utils/helpers";
 
 const Home = lazyLoadPage("Home");
-const Portofolio = lazyLoadPage("Portofolio");
+const Portfolio = lazyLoadPage("Portfolio");
 const Timeline = lazyLoadPage("Timeline");
 const Skills = lazyLoadPage("Skills");
 const Certificates = lazyLoadPage("Certificates");
@@ -51,7 +51,7 @@ const Tips = lazyLoadPage("Tips");
 export default {
   components: {
     Home,
-    Portofolio,
+    Portfolio,
     Timeline,
     Skills,
     Certificates,

@@ -14,7 +14,7 @@
 
 <script>
 import { STORE } from "@/utils/store";
-import { capitalize, toggleSkillView } from "@/utils/helpers";
+import { capitalize, toggleView } from "@/utils/helpers";
 
 export default {
   name: "DescriptionConntent",
@@ -32,7 +32,7 @@ export default {
   methods: {
     showDetails(element) {
       STORE.skillItem = element;
-      toggleSkillView();
+      toggleView("skill-option");
     }
   },
   computed: {

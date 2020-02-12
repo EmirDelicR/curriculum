@@ -9,7 +9,7 @@
 <script>
 import Graph from "./Options/graph";
 import Description from "./Options/description";
-import { toggleSkillView } from "@/utils/helpers";
+import { toggleView } from "@/utils/helpers";
 
 export default {
   name: "OptionConntent",
@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     addTransformEfect() {
-      toggleSkillView();
+      toggleView("skill-option");
     }
   },
   computed: {
