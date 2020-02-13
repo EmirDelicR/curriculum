@@ -3,16 +3,16 @@
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
-
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: local('Custom Font');
     src: url('#{$file-path}.eot');
     src: url('#{$file-path}.eot?#iefix') format('embedded-opentype');
     src: url('#{$file-path}.woff2') format('woff2');
     src: url('#{$file-path}.woff') format('woff');
     src: url('#{$file-path}.ttf') format('truetype');
-    font-display: swap;
   }
 }
-
 @mixin set-fonts($font-size: $fs-10, $ls: $ls-8, $lh: $lh-10) {
   font-size: $font-size;
   letter-spacing: $ls;
