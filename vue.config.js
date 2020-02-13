@@ -23,5 +23,13 @@ module.exports = {
       .test(/\.pdf$/)
       .use('file-loader')
       .loader('file-loader');
+  },
+  configureWebpack: {
+    optimization: {
+      splitChunks: {
+        minSize: 10000,
+        maxSize: 244000
+      }
+    }
   }
 };
