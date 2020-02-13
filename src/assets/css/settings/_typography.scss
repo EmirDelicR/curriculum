@@ -1,5 +1,5 @@
 /* Source Courgette */
-// @include font-face('#{$source-courgette}', '#{$path-cour}-Regular');
+@include font-face('#{$source-courgette}', '#{$path-cour}-Regular');
 
 body {
   font-family: $main-font;
