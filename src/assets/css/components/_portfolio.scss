@@ -152,7 +152,7 @@
 
           .open-icon {
             text-align: end;
-            width: 95%;
+            width: 94%;
             margin-bottom: 0.5vh;
             svg {
               @extend %svg-settings;
@@ -210,6 +210,9 @@
 
         .content {
           > div {
+            .open-icon {
+              width: 96%;
+            }
             p {
               font-size: 0.8rem;
               padding: 0.7rem 0.7rem;
@@ -234,9 +237,9 @@
         .content {
           > div {
             svg {
-              font-size: $fs-20;
-              margin-right: 2vh;
+              font-size: $fs-18;
             }
+
             p {
               font-size: 0.7rem;
             }
