@@ -16,19 +16,13 @@ body {
     font-family: $source-courgette, cursive;
   }
 }
-h1,
+
 h2 {
   font-family: '#{$main-font}-Medium';
+  color: $font-color-fallback;
 }
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: '#{$main-font}-Bold';
-}
-
-h1 {
-  @include set-fonts($fs-36, $ls-1, $lh-42);
 }
 
 h2 {
@@ -37,16 +31,4 @@ h2 {
 
 h3 {
   @include set-fonts($fs-20, $ls-3, $lh-26);
-}
-
-h4 {
-  @include set-fonts($fs-18, $ls-3, $lh-25);
-}
-
-h5 {
-  @include set-fonts($fs-16, $ls-3, $lh-24);
-}
-
-h6 {
-  @include set-fonts($fs-14, $ls-3, $lh-20);
 }
