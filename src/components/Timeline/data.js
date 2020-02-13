@@ -16,7 +16,7 @@ export const data = [
     job: 'Php, Jquery, CSS',
     linkDescription: 'Has-to-be',
     link: 'https://has-to-be.com/de/',
-    time: '10.10.2017 - 1.10.2018',
+    time: '10.10.2017 - 01.10.2018',
     icon: 'fas fa-briefcase'
   },
   {
