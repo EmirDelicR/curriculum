@@ -8,10 +8,14 @@
       <div class="content-data">
         <p>{{ $t(`portfolio-data.${getData.content}`) }}</p>
         <p>{{ $t('portfolio-data.programing_env') }} {{ getData.programs }}</p>
-        <i class="fas fa-image" @click="updateView"></i>
+        <div @click="updateView" class="open-icon">
+          <i class="fas fa-image"></i>
+        </div>
       </div>
       <div :class="['portfolio-image', generateSliderId]">
-        <i class="far fa-times-circle close-icon" @click="updateView"></i>
+        <div @click="updateView">
+          <i class="far fa-times-circle close-icon"></i>
+        </div>
         <img :src="getImage(getData.img_url)" :alt="generateId" />
       </div>
     </div>
@@ -51,8 +55,8 @@ export default {
     setClass() {
       this.toogleHtmlItemClass("content active");
       this.toogleHtmlItemClass(`content ${this.generateId}`);
-      this.toogleHtmlItemClass("far  active");
-      this.toogleHtmlItemClass(`far ${this.generateId}`);
+      this.toogleHtmlItemClass("svg-inline--fa  active");
+      this.toogleHtmlItemClass(`svg-inline--fa ${this.generateId}`);
     },
     toogleHtmlItemClass(className) {
       const item = document.getElementsByClassName(`${className}`)[0];

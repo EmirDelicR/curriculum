@@ -1,6 +1,8 @@
 <template>
   <div class="options-tab-content">
-    <i class="far fa-times-circle close-icon" @click="addTransformEfect"></i>
+    <div @click="addTransformEfect">
+      <i class="far fa-times-circle close-icon"></i>
+    </div>
     <Graph :data="getContentData" v-if="isVisual" />
     <Description :data="getContentData" v-if="!isVisual" />
   </div>
